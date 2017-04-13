@@ -46,22 +46,35 @@ namespace T3B4
             var toggleButtonPosition3 = schiff1Mitte.TranslatePoint(new Point(0, 0), grid);
             var toggleButtonPosition4 = schiff1Hinten.TranslatePoint(new Point(0, 0), grid);
 
-            if (toggleButtonPosition1 == toggleButtonPosition2)
+                       if (toggleButtonPosition1 == toggleButtonPosition2)
             {
-                klick.Content = "Vorne";
+                BitmapImage bI = new BitmapImage(new Uri("f:/Treffer.png"));
+                Image img = new Image();
+                img.Source = bI;
+                klick.Content = img;
             }
             else if (toggleButtonPosition1 == toggleButtonPosition3)
             {
-                klick.Content = "Mitte";
+                BitmapImage bI = new BitmapImage(new Uri("f:/Treffer.png"));
+                Image img = new Image();
+                img.Source = bI;
+                klick.Content = img;
             }
             else if (toggleButtonPosition1 == toggleButtonPosition4)
             {
-                klick.Content = "Hinten";
+                BitmapImage bI = new BitmapImage(new Uri("f:/Treffer.png"));
+                Image img = new Image();
+                img.Source = bI;
+                klick.Content = img;
             }
             else
             {
-                klick.Content = "Daneben";
+                BitmapImage bI = new BitmapImage(new Uri("f:/WaterSymbol.gif"));
+                Image img = new Image();
+                img.Source = bI;
+                klick.Content = img;
             }
+
             // Ende Version 1
         }
     }
